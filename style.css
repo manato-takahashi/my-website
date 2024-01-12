@@ -7,10 +7,11 @@ body{
 }
 
 .navbar{
+    z-index: 1000;
     width: 100%;
     height: 50px;
-    background-color: black;
-    position: sticky;
+    background-color: #151515;
+    position: fixed;
     top: 0;
 }
 
@@ -44,10 +45,47 @@ body{
 
 .menu-list-item{
     margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-list-item a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-list-item::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.menu-list-item:hover::before{
+    width: 100%
 }
 
 .menu-list-item.active{
     font-weight: bold;
+}
+
+.menu-list-item.active::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+
+.menu-list-item.active:hover::before{
+    width: 100%
 }
 
 .profile-container{
@@ -66,6 +104,42 @@ body{
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.dropdown {
+    position: relative;
+}
+   
+.dropdown .submenu {
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc; /* 枠線を追加 */
+    background-color: #fff; /* 背景色を白に */
+}
+   
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.dropdown .submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* 下線を追加 */
+}
+   
+.dropdown li {
+    list-style: none;
+}
+   
+.dropdown .submenu a {
+    color: black; /* リンクの色を黒に */
+    text-decoration: none; /* 下線を除去 */
+}
+   
+.dropdown .submenu a:hover {
+    background-color: #f0f0f0; /* ホバー時の背景色を灰色に */
 }
 
 .toggle{
@@ -97,25 +171,40 @@ body{
 .sidebar{
     width: 50px;
     height: 100%;
-    background-color: black;
+    background-color: #151515;
     position: fixed;
     top: 0;
+    z-index: 1001;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
 }
 
+.sidebar a{
+    text-decoration: none;
+}
+
 .left-menu-icon{
     color: white;
     font-size: 20px;
+    margin-top: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.left-menu-icon:hover{
+    color: #4dbf00;
 }
 
 .container{
+    overflow: auto;
     background-color: #151515;
     min-height: calc(100vh - 50px);
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
+    margin-top: 50px;
 }
 
 .content-container{
@@ -145,6 +234,7 @@ body{
     border: none;
     outline: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .movie-list-container{
@@ -258,6 +348,10 @@ body{
     color: black;
 }
 
+.left-menu-icon.active:hover{
+    color: #4dbf00;
+}
+
 .toggle.active{
     background-color: black;
 }
@@ -272,3 +366,159 @@ body{
         display: none;
     }
 }
+
+
+
+.profile-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.profile-title{
+    margin-left: 20px;
+}
+
+.card {
+    width: 300px; /* カードの幅 */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 影の効果 */
+    transition: 0.3s; /* ホバーするときの遷移の効果 */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    width: 50%; /* 画像をカードの幅に合わせる */
+    border-radius: 50%; /* 丸い写真にする */
+    padding: 20px;
+}
+
+.card-body {
+    padding: 2px 16px; /* コンテンツのためのパディング */
+}
+
+.card-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block; /* リンクをボタンのように表示 */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+ }
+ 
+ .nav-links a {
+    color: #4dbf00;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+ }
+ 
+ .nav-links a:hover {
+    border-bottom: 2px solid black;
+ }
+ 
+
+ .video-container {
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    height: 500px; /* 動画コンテナの高さ、必要に応じて調整してください */
+  }
+  
+  .video-container iframe {
+    width: 100%;  /* 動画の幅、ビューポートやコンテナのサイズに応じて調整 */
+    height: 100%; /* 動画の高さ、ビューポートやコンテナのサイズに応じて調整 */
+    max-width: 560px; /* 動画の最大幅、必要に応じて調整してください */
+    max-height: 315px; /* 動画の最大高さ、必要に応じて調整してください */
+  }
+
+  .copyright{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer{
+    display: flex; /* フレックスコンテナとして設定 */
+    flex-direction: column; /* 子要素を縦方向に並べる */
+    align-items: center; /* 横方向の中央揃え */
+    justify-content: center; /* 縦方向の中央揃え */
+    background-color: #151515;
+    font-family: 'Sen', sans-serif;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.reference{
+    margin-bottom: 20px;
+}
+
+.reference a{
+    color: white; /* リンクのテキスト色を白に */
+    text-decoration: none; /* 下線を消す */
+}
+
+.reference a:hover{
+    color: #4dbf00; /* ホバー時もリンクのテキスト色を白に */
+    text-decoration: none; /* ホバー時の下線を消す */
+}
+
+
+
+.profile-container a,
+.profile-container a:visited,  /* 既に訪れたリンク */
+.profile-container a:hover,    /* ホバー時のリンク */
+.profile-container a:active {  /* クリックされている間のリンク */
+    color: white; /* ここで希望の色を設定してください */
+    text-decoration: none;  /* リンクの下線を消す */
+}
+
+.dropdown .submenu a,
+.dropdown .submenu a:visited,  /* 既に訪れたリンク */
+.dropdown .submenu a:hover,    /* ホバー時のリンク */
+.dropdown .submenu a:active {  /* クリックされている間のリンク */
+    color: black; /* ここで希望の色を設定してください */
+    text-decoration: none;  /* リンクの下線を消す */
+}
+
+/* ダークモード */
+.profile-container a {
+    /* ダークモード時のスタイリング */
+    color: white;
+    /* その他のスタイル */
+}
+
+/* ライトモード */
+.profile-container.active a{
+    /* ライトモード時のスタイリング */
+    color: black;
+    /* その他のスタイル */
+}
+
