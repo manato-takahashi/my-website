@@ -16,19 +16,27 @@
             <div class="logo-container"><h1 class="logo">funFind</h1></div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item active">Home</li>
-                    <li class="menu-list-item">Movies</li>
-                    <li class="menu-list-item">Series</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Trends</li>
+                    <li class="menu-list-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-list-item"><a href="favorite.html">FAVORITES</a></li>
+                    <li class="menu-list-item"><a href="mypage.html">MYPAGE</a></li>
+                    <li class="menu-list-item"><a href="login.html">LOGOUT</li>
                 </ul>
             </div>
             <div class="profile-container">
-                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <i class="fa-solid fa-user"></i>
                 <div class="profile-text-container">
-                    <span class="profile-text">Profile</span>
-                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="dropdown">
+                      <li>
+                        Guest User
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                          <li><a href="mypage.html">MYPAGE</a></li>
+                          <li><a href="login.html">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                    </ul>
                 </div>
+                   
                 <div class="toggle">
                     <i class="fa-solid fa-moon toggle-icon"></i>
                     <i class="fa-solid fa-sun toggle-icon"></i>
@@ -38,13 +46,9 @@
         </div>
     </div>
     <div class="sidebar">
-        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-        <i class="left-menu-icon fa-solid fa-house"></i>
-        <i class="left-menu-icon fa-solid fa-users"></i>
-        <i class="left-menu-icon fa-solid fa-bookmark"></i>
-        <i class="left-menu-icon fa-solid fa-tv"></i>
-        <i class="left-menu-icon fa-solid fa-hourglass"></i>
-        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+        <a href="index.html" class="left-menu-icon fa-solid fa-house"></a>
+        <a href="favorite.html" class="left-menu-icon fa-solid fa-bookmark"></a>
+        <a href="mypage.html" class="left-menu-icon fa-solid fa-user"></a>
     </div>
     <div class="container">
         <div class="content-container">
@@ -54,7 +58,7 @@
                 <img class="featured-title" src="img/f-t-1.png" alt="">
                 <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum repudiandae soluta reiciendis
                     minima, laborum laudantium dicta, aliquam odio quia, nesciunt sapiente quae voluptatum temporibus optio quam minus obcaecati aut!</p>
-                <button class="featured-button">WATCH</button>
+                <button class="featured-button">ADD FAVORITE</button>
             </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">NEW RELEASES</h1>
@@ -62,45 +66,45 @@
                     <div class="movie-list">
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/test1.png" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/2.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
@@ -112,7 +116,8 @@
                 <img class="featured-title" src="img/f-t-2.png" alt="">
                 <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum repudiandae soluta reiciendis
                     minima, laborum laudantium dicta, aliquam odio quia, nesciunt sapiente quae voluptatum temporibus optio quam minus obcaecati aut!</p>
-                <button class="featured-button">WATCH</button>
+                <button class="featured-button">ADD FAVORITE</button>
+                
             </div>
 
             <div class="movie-list-container">
@@ -121,45 +126,45 @@
                     <div class="movie-list">
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/8.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/9.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/10.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/11.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/12.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/13.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/14.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
@@ -172,45 +177,45 @@
                     <div class="movie-list">
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/15.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/16.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/17.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/18.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/19.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/2.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
@@ -223,45 +228,45 @@
                     <div class="movie-list">
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/8.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/9.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
+                            <span class="movie-list-item-title">TITLE</span>
                             <p class="movie-list-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam consectetur </p>
-                            <button class="movie-list-item-button">WATCH</button>
+                            <button class="movie-list-item-button">ADD FAVORITE</button>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
@@ -272,5 +277,21 @@
     </div>
     <script src="app.js"></script>
 </body>
+
+<footer>
+    <p class="reference">Images from <a href="https://www.wallpaperflare.com/minimalism-4k-for-mac-desktop-wallpaper-tzymg/download">Wallpaperflare</a> and <a href="https://wallpapercave.com/w/wp5693529">Wallpapercave</a>.</p>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <p class="copyright">
+        &copy; 2024 Manato-Takahashi All Rights Reserved.
+    </p>
+ </footer>
+ 
 
 </html>

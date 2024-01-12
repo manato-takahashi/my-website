@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= stylesheet href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <title>MyTHEATER</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">funFind</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-list-item"><a href="favorite.html">FAVORITES</a></li>
+                    <li class="menu-list-item"><a href="mypage.html">MYPAGE</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <i class="fa-solid fa-user"></i>
+                <div class="profile-text-container">
+                    <ul class="dropdown">
+                      <li>
+                        Guest User
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                          <li><a href="mypage.html">MYPAGE</a></li>
+                          <li><a href="login.html">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </div>
+                   
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="index.html" class="left-menu-icon fa-solid fa-house"></a>
+        <a href="favorite.html" class="left-menu-icon fa-solid fa-bookmark"></a>
+        <a href="mypage.html" class="left-menu-icon fa-solid fa-user"></a>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+            <h1 class="profile-title">PROFILE</h1>
+                        <div class="profile-section">
+                            <!-- プロファイルイメージのカード -->
+                            <div class="card">
+                                <img src="img/profileimg.png" alt="Profile Image" class="card-img-top" width="150">
+                                <div class="card-body">
+                                    <h2 class="card-title">Guest User</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente reprehenderit quidem recusandae itaque aut vitae debitis dolorum, neque corporis assumenda placeat necessitatibus amet tempore illum doloribus hic molestias iure voluptate!</p>
+                                    <a href="index.html" class="btn">Home</a>
+                                    <a href="index.html" class="btn">Work</a>
+                                    <a href="index.html" class="btn">Support</a>
+                                    <a href="index.html" class="btn">Settings</a>
+                                    <a href="login.html" class="btn">Logout</a>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nK8m1AHZojo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
